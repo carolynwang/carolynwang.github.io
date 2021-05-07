@@ -2093,6 +2093,7 @@ input, select, textarea {
 			border: 0;
 			border-radius: 0;
 			padding: 0;
+			margin: 10
 		}
 
 /* Icon */
@@ -2723,7 +2724,6 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		border-top: 0 !important;
-		padding: 50px
 	}
 
 		.tiles + * {
@@ -2996,7 +2996,7 @@ input, select, textarea {
 					width: 65em;
 				}
 
-			.spotlights > section:nth-child(2n) {
+			.spotlights > section:nth-child(2n+1) {
 				-moz-flex-direction: row-reverse;
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
@@ -3004,7 +3004,7 @@ input, select, textarea {
 				background-color: #333856;
 			}
 
-				.spotlights > section:nth-child(2n) > .content {
+				.spotlights > section:nth-child(2n+1) > .content {
 					-moz-align-items: -moz-flex-end;
 					-webkit-align-items: -webkit-flex-end;
 					-ms-align-items: -ms-flex-end;
