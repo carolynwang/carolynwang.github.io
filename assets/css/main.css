@@ -3951,9 +3951,3 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
