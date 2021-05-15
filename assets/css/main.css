@@ -3525,7 +3525,7 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
-			background-color: #6fc3df;
+			background-color: transparent;
 		}
 
 		#banner.style2:after {
