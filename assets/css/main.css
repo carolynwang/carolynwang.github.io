@@ -2970,7 +2970,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #B3997F;
+			background-color: #ffffff;
 		}
 
 			.spotlights > section > .image {
@@ -2980,6 +2980,7 @@ input, select, textarea {
 				display: block;
 				position: relative;
 				width: 30%;
+				padding: 2em;
 			}
 
 				.spotlights > section > .image img {
@@ -3017,7 +3018,8 @@ input, select, textarea {
 				-webkit-align-items: center;
 				-ms-align-items: center;
 				align-items: center;
-				padding: 2em 3em 0.1em 3em ;
+				text-align: center;
+				padding: 2em 5em 0.1em 5em ;
 				width: 70%;
 			}
 
@@ -3032,7 +3034,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #BFA68D;
+				background-color: #ffffff;
 			}
 
 				.spotlights > section:nth-child(2n+1) > .content {
@@ -3668,12 +3670,12 @@ input, select, textarea {
 			padding: 0 !important;
 		}
 
-			#contact > .inner > :nth-child(3n - 2) {
+			/*#contact > .inner > :nth-child(3n - 2) {
 				padding-right: 3em;
 				width: 20%;
-			}
+			} */
 
-			#contact > .inner > :nth-child(3n - 1) {
+			#contact > .inner > :first-child {
 				background-color: #E8D8C9;
 				padding: 4em 3em 2em 3em;
 				margin-bottom: 5em;
@@ -3681,10 +3683,10 @@ input, select, textarea {
 				width: 60%;
 			}
 
-			#contact > .inner > :nth-child(3n) {
+			/* #contact > .inner > :nth-child(3n) {
 				padding-left: 3em;
 				width: 20%;
-			}
+			} */
 
 			#contact > .inner > .split {
 				padding: 0;
@@ -3837,7 +3839,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(184, 159, 128, 0.9);
+		background: rgba(184, 159, 128, 0.8);
 		box-shadow: none;
 		height: 100%;
 		left: 0;
