@@ -3531,7 +3531,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
 			-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
 			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
-			padding: 0 !important;
+			padding: 0 5em 0 2em !important;
 			position: relative;
 			z-index: 2;
 		}
