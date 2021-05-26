@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #D1B599;
+		background: #ffffff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -116,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
 		font-weight: 300;
@@ -168,7 +168,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #000000;
 		font-weight: 600;
 	}
 
@@ -181,7 +181,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #000000;
 		font-weight: 600;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
@@ -1784,7 +1784,7 @@ input, select, textarea {
 
 			header.major > :first-child:after {
 				content: '';
-				background-color: #ffffff;
+				background-color: #000000;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
@@ -1793,7 +1793,7 @@ input, select, textarea {
 
 			header.major.alt > :first-child:after {
 				content: '';
-				background-color: #000000;
+				background-color: #ffffff;
 				display: block;
 				height: 2px;
 				margin: 0.325em 0 0.5em 0;
@@ -1899,7 +1899,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #000000;
 		display: block;
 		font-size: 0.8em;
 		font-weight: 600;
@@ -1950,8 +1950,8 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #ffffff;
-			box-shadow: 0 0 0 2px #ffffff;
+			border-color: #000000;
+			box-shadow: 0 0 0 2px #000000;
 		}
 
 	select {
@@ -2143,9 +2143,9 @@ input, select, textarea {
 		}
 
 		.icon.alt:before {
-			background-color: #ffffff;
+			background-color: #000000;
 			border-radius: 100%;
-			color: #000000;
+			color: #ffffff;
 			display: inline-block;
 			height: 2em;
 			line-height: 2em;
@@ -2526,8 +2526,8 @@ input, select, textarea {
 		background-color: transparent;
 		border: 0;
 		border-radius: 0;
-		box-shadow: inset 0 0 0 2px #ffffff;
-		color: #ffffff;
+		box-shadow: inset 0 0 0 2px #000000;
+		color: #000000;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -2639,7 +2639,7 @@ input, select, textarea {
 			input[type="button"].next:before,
 			button.next:before,
 			.button.next:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23000000%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
 			}
 
 			input[type="submit"].next:after,
@@ -2683,7 +2683,7 @@ input, select, textarea {
 		.button.primary {
 			background-color: #ffffff;
 			box-shadow: none;
-			color: #242943;
+			color: #D8B693;
 		}
 
 			input[type="submit"].primary:hover, input[type="submit"].primary:active,
@@ -2696,7 +2696,7 @@ input, select, textarea {
 			.button.primary:hover,
 			.button.primary:active {
 				background-color: #dedede;
-				color: #242943 !important;
+				color: #D8B693 !important;
 			}
 
 			input[type="submit"].primary:active,
@@ -2722,25 +2722,90 @@ input, select, textarea {
 		}
 
 		/* Button but black */
-		input[type="button"],
-		button,
+		input[type="button"].alt,
+		button.alt,
 		.button.alt {
 			box-shadow: inset 0 0 0 2px #000000;
 			color: #000000;
 		}
 
-			input[type="button"].next:before,
+			button.alt:hover,
+			button.alt:active,
+			.button.alt:hover,
+			.button.alt:active {
+				box-shadow: inset 0 0 0 2px #000000;
+				color: #D8B693;
+			}
+
+			input[type="button"].alt:active,
+			button.alt:active,
+			.button.alt:active {
+				background-color: rgba(255, 255, 255, 0.1);
+				box-shadow: inset 0 0 0 2px #000000;
+				color: #cbcbcb;
+			}
+
+			input[type="button"].alt.primary:hover,
+			input[type="button"].alt.primary:active,
+			button.alt.primary:hover,
+			button.alt.primary:active,
+			.button.alt.primary:hover,
+			.button.alt.primary:active {
+				background-color: #dedede;
+				color: #000000 !important;
+			}
+
+			input[type="submit"].alt.primary:active,
+			input[type="reset"].alt.primary:active,
+			input[type="button"].alt.primary:active,
+			button.alt.primary:active,
+			.button.alt.primary:active {
+				background-color: #cbcbcb;
+			}
+
+			input[type="button"].alt.next:hover,
+			input[type="button"].alt.next:active,
+			button.alt.next:hover,
+			button.alt.next:active,
+			.button.alt.next:hover,
+			.button.alt.next:active {
+				box-shadow: inset 0 0 0 2px #D8B693;
+				color: #D8B693;
+			}
+
+			input[type="button"].alt.next:before,
 			button.alt.next:before,
 			.button.alt.next:before {
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23000000%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
 			}
 
-			input[type="button"].next:after,
+			input[type="button"].alt.next:after,
 			button.alt.next:after,
 			.button.alt.next:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23C1A78F%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='36px' height='24px' viewBox='0 0 36 24' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23D8B693%3B stroke-width: 2px%3B %7D%3C/style%3E%3Cline x1='0' y1='12' x2='34' y2='12' /%3E%3Cline x1='25' y1='4' x2='34' y2='12.5' /%3E%3Cline x1='25' y1='20' x2='34' y2='11.5' /%3E%3C/svg%3E");
 				opacity: 0;
 				z-index: 1;
+			}
+
+			input[type="button"].alt.next:hover:after,
+			input[type="button"].alt.next:active:after,
+			button.alt.next:hover:after,
+			button.alt.next:active:after,
+			.button.alt.next:hover:after,
+			.button.alt.next:active:after {
+				opacity: 1;
+			}
+
+			@media screen and (max-width: 1280px) {
+
+				input[type="submit"].alt.next,
+				input[type="reset"].alt.next,
+				input[type="button"].alt.next,
+				button.alt.next,
+				.button.alt.next {
+					padding-right: 5em;
+				}
+
 			}
 
 /* Tiles */
@@ -2971,6 +3036,7 @@ input, select, textarea {
 			-ms-flex-direction: row;
 			flex-direction: row;
 			background-color: #ffffff;
+			/* height: 100vh; */
 		}
 
 			.spotlights > section > .image {
@@ -3148,7 +3214,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #D1B599;
+		background-color: #ffffff;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3178,8 +3244,8 @@ input, select, textarea {
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
-				color: #D8B693;
+				background-color: #000000;
+				color: #ffffff;
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -3231,7 +3297,7 @@ input, select, textarea {
 				}
 
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
-						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
+						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23000000%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: 24px 32px;
@@ -3313,7 +3379,7 @@ input, select, textarea {
 			}
 
 			#header.alt.style6 .logo strong {
-				color: #D8B693;
+				color: #ffffff;
 			}
 
 		body.is-preload #header.alt {
@@ -3414,14 +3480,14 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/main.jpg");
+		/* background-image: url("../../images/main.jpg"); */
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
 		padding: 6em 0 2em 0 ;
 		background-attachment: fixed;
-		background-position: center;
+		background-position: bottom;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
@@ -3444,7 +3510,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #D8B693;
+			background-color: #ffffff;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3545,7 +3611,7 @@ input, select, textarea {
 		}
 
 		#banner.style6:after {
-			background-color: #D8B693;
+			background-color: #ffffff;
 		}
 
 		body.is-preload #banner:after {
@@ -3756,7 +3822,7 @@ input, select, textarea {
 
 		#footer .copyright li {
 			border-left: solid 1px rgba(212, 212, 255, 0.1);
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(0, 0, 0, 0.5);
 			display: inline-block;
 			line-height: 1;
 			margin-left: 1em;
@@ -3839,7 +3905,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(184, 159, 128, 0.8);
+		background: rgba(255, 255, 255, 0.8);
 		box-shadow: none;
 		height: 100%;
 		left: 0;
@@ -3954,7 +4020,7 @@ input, select, textarea {
 			}
 
 			#menu .close:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23000000%3B stroke-width: 2%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='20' y2='20' /%3E%3Cline x1='20' y1='0' x2='0' y2='20' /%3E%3C/svg%3E");
 			}
 
 			#menu .close:after {
