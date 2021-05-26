@@ -2210,6 +2210,16 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.fixed {
+			display: block;
+			position: fixed;
+			height: 100%;
+		}
+
+			.image.fixed img {
+				height: 100%;
+			}
+
 		.image.main {
 			display: block;
 			margin: 2.5em 0;
@@ -3485,19 +3495,19 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 6em 0 2em 0 ;
+		padding: 0 0 0 0 ;
 		background-attachment: fixed;
-		background-position: bottom;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
-		margin-bottom: -3.25em;
-		max-height: 32em;
-		min-height: 22em;
+		/* margin-bottom: -3.25em; */
+		/* max-height: 32em; */
+		/* min-height: 22em; */
 		position: relative;
-		top: -3.25em;
+		/* top: -3.25em; */
 	}
 
 		#banner:after {
@@ -3514,9 +3524,9 @@ input, select, textarea {
 			content: '';
 			display: block;
 			height: 100%;
-			left: 0;
-			opacity: 0.85;
-			position: absolute;
+			left: 20;
+			opacity: 0.3;
+			position: fixed;
 			top: 0;
 			width: 100%;
 			z-index: 1;
@@ -3663,7 +3673,7 @@ input, select, textarea {
 					}
 
 				#banner.major {
-					height: auto;
+					height: 100vh;
 					min-height: 0;
 					max-height: none;
 				}
