@@ -2765,6 +2765,7 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
 			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
 			padding: 4em 4em 2em 4em ;
+			margin: 0 0.5em 0 0.5em;
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -2774,7 +2775,7 @@ input, select, textarea {
 			min-height: 23em;
 			overflow: hidden;
 			position: relative;
-			width: calc(100% / 3);
+			width: calc((100% / 3) - 1em);
 		}
 
 			.tiles article .image {
@@ -3113,7 +3114,6 @@ input, select, textarea {
 		display: -ms-flex;
 		display: flex;
 		background-color: #ffffff;
-		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
 		height: 3.25em;
@@ -3236,52 +3236,6 @@ input, select, textarea {
 			-webkit-animation: reveal-header 0.35s ease;
 			-ms-animation: reveal-header 0.35s ease;
 			animation: reveal-header 0.35s ease;
-		}
-
-		#header.alt {
-			-moz-transition: opacity 2.5s ease;
-			-webkit-transition: opacity 2.5s ease;
-			-ms-transition: opacity 2.5s ease;
-			transition: opacity 2.5s ease;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			-moz-animation: none;
-			-webkit-animation: none;
-			-ms-animation: none;
-			animation: none;
-			background-color: transparent;
-			box-shadow: none;
-			position: absolute;
-		}
-
-			#header.alt.style1 .logo strong {
-				color: #6fc3df;
-			}
-
-			#header.alt.style2 .logo strong {
-				color: #8d82c4;
-			}
-
-			#header.alt.style3 .logo strong {
-				color: #ec8d81;
-			}
-
-			#header.alt.style4 .logo strong {
-				color: #e7b788;
-			}
-
-			#header.alt.style5 .logo strong {
-				color: #8ea9e8;
-			}
-
-			#header.alt.style6 .logo strong {
-				color: #ffffff;
-			}
-
-		body.is-preload #header.alt {
-			opacity: 0;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -3422,6 +3376,7 @@ input, select, textarea {
 
 		#banner h1 {
 			font-size: 3.25em;
+			margin-bottom:0.5em;
 		}
 
 		#banner > .inner {
@@ -3494,22 +3449,6 @@ input, select, textarea {
 
 		#banner.style2:after {
 			background-color: #8d82c4;
-		}
-
-		#banner.style3:after {
-			background-color: #ec8d81;
-		}
-
-		#banner.style4:after {
-			background-color: #e7b788;
-		}
-
-		#banner.style5:after {
-			background-color: #8ea9e8;
-		}
-
-		#banner.style6:after {
-			background-color: #ffffff;
 		}
 
 		body.is-preload #banner:after {
