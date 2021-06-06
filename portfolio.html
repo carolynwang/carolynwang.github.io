@@ -25,66 +25,53 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="/" class="logo"><strong>works</strong> <span>by carolyn</span></a>
-            <nav>
-                <a href="#menu">Menu</a>
+            <a href="/" class="logo"><img src="images/logo.png" alt="Carolyn Wang" /></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current">
+                        <a href="portfolio.html">Photography</a>
+                        <ul>
+                            <li><a href="grad.html">Graduates</a></li>
+                            <li><a href="portrait.html">Portraits</a></li>
+                            <li><a href="places-and-things.html">Places & Things</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="art.html">Artwork</a>
+                        <ul>
+                            <li><a href="art.html">Digital</a></li>
+                            <li><a href="art.html">Traditional</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
         </header>
 
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Photography</a></li>
-                <li><a href="art.html">Artwork</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
         <!-- Banner -->
-        <section id="banner" class="style1">
-            <div class="inner">
-                <h1>Photography</h1>
-                <div class="content">
-                    <p>Capturing a moment in time.<br /> Doing my best to make lovely humans feel beautiful and confident.</p>
-                </div>
-            </div>
-        </section>
+        <div class="inner" style="text-align: center; margin: 3em">
+            <h2 style="margin-bottom:0">Photography</h2>
+            <p>Doing my best to make lovely humans feel beautiful and confident.</p>
+        </div>
 
         <!-- Main -->
         <div id="main">
 
             <!-- One -->
-            <section id="one" class="tiles">
-                <article>
-                    <span class="image">
-									<img src="images/grad/cover.jpg" alt="" />
-								</span>
-                    <header style="text-align:center">
-                        <h3><a href="grad.html" class="link">Graduates</a></h3>
-                        <p>You made it! Congrats on graduating, let's celebrate.</p>
-                    </header>
-                </article>
-                <article>
-                    <span class="image">
-									<img src="images/portrait/cover.jpg" alt="" />
-								</span>
-                    <header style="text-align:center">
-                        <h3><a href="portrait.html" class="link">Portraits</a></h3>
-                        <p>Yes, grad photos were a whole separate category. More beautiful humans, in a less celebratory context.</p>
-                    </header>
-                </article>
-                <article>
-                    <span class="image">
-									<img src="images/other/cover.jpg" alt="" />
-								</span>
-                    <header style="text-align:center">
-                        <h3><a href="places-and-things.html" class="link">Places & Things</a></h3>
-                        <p>Scenery, architecture, and other things that I notice in my daily life, on walks, on outings, and with friends.</p>
-                    </header>
-                </article>
-            </section>
+            <!-- <div class="inner"> -->
+            <div class="row" style="margin: 2em 2em 0 1em;">
+                <div class="col-4 col-12-small" style="padding-left: 1em;">
+                    <span class="image portfolio fit"><a href="portrait.html"><img src="images/portrait/cover.jpg" alt="" /></a></span>
+                </div>
+                <div class="col-4 col-12-small" style="padding-left: 1em;">
+                    <span class="image portfolio fit"><a href="grad.html"><img src="images/grad/cover.jpg" alt="" /></a></span>
+                </div>
+                <div class="col-4 col-12-small" style="padding-left: 1em;">
+                    <span class="image portfolio fit"><a href="places-and-things.html"><img src="images/other/cover.jpg" alt="" /></a></span>
+                </div>
+            </div>
+            <!-- </div> -->
 
             <!-- Footer -->
             <footer id="footer">
@@ -106,6 +93,7 @@
 
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
         <script src="assets/js/browser.min.js"></script>

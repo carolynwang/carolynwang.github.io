@@ -20,35 +20,42 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="/" class="logo"><strong>works</strong> <span>by carolyn</span></a>
-            <nav>
-                <a href="#menu">Menu</a>
+            <a href="/" class="logo"><img src="images/logo.png" alt="Carolyn Wang" /></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current">
+                        <a href="portfolio.html">Photography</a>
+                        <ul>
+                            <li><a href="grad.html">Graduates</a></li>
+                            <li><a href="portrait.html">Portraits</a></li>
+                            <li class="current"><a href="places-and-things.html">Places & Things</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="art.html">Artwork</a>
+                        <ul>
+                            <li><a href="art.html">Digital</a></li>
+                            <li><a href="art.html">Traditional</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
         </header>
 
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Photography</a></li>
-                <li><a href="art.html">Artwork</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
         <!-- Banner -->
-        <section id="banner" class="style1">
+        <!-- <section id="banner" class="style1">
             <div class="inner">
                 <h1>Places and Things</h1>
                 <div class="content">
                     <p>mostly taken on iphone.<br /> although my main work is portraits, i am partial to the aesthetics of the random corners of the world. sometimes, i just see something while i'm taking a walk and think it's worth capturing.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Main -->
-        <div id="main">
+        <div id="main" style="margin-top: 4em;">
 
             <div class="box">
                 <div class="gallery style2 medium lightbox onload-fade-in">
@@ -110,11 +117,11 @@
                 </div>
             </div>
 
-            <div class="content">
+            <!-- <div class="content">
                 <ul class="actions special">
-                    <li><a href="portfolio.html" class="button">Return to main portfolio page</a></li>
+                    <li><a href="portfolio.html" class="button small">Return to main portfolio page</a></li>
                 </ul>
-            </div>
+            </div> -->
 
         </div>
 
@@ -138,6 +145,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>

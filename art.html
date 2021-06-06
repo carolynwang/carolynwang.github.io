@@ -25,43 +25,45 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="/" class="logo"><strong>works</strong> <span>by carolyn</span></a>
-            <nav>
-                <a href="#menu">Menu</a>
+            <a href="/" class="logo"><img src="images/logo.png" alt="Carolyn Wang" /></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="portfolio.html">Photography</a>
+                        <ul>
+                            <li><a href="grad.html">Graduates</a></li>
+                            <li><a href="portrait.html">Portraits</a></li>
+                            <li><a href="places-and-things.html">Places & Things</a></li>
+                        </ul>
+                    </li>
+                    <li class="current">
+                        <a href="art.html">Artwork</a>
+                        <ul>
+                            <li><a href="art.html">Digital</a></li>
+                            <li><a href="art.html">Traditional</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
         </header>
 
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Photography</a></li>
-                <li><a href="art.html">Artwork</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
         <!-- Banner -->
-        <section id="banner" class="style1">
+        <!-- <section id="banner" class="style1">
             <div class="inner">
                 <h1>Artwork</h1>
                 <div class="content">
                     <p>Trying to be more creative.<br /> My comfort zone is realistic pencil and paper sketches, but dabbling in digital art.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Main -->
-        <div id="main">
+        <div id="main" style="margin-top: 4em;">
 
             <div class="box">
                 <div class="gallery style2 big lightbox onload-fade-in">
-                    <article>
-                        <a href="images/drawing/market.png" class="image">
-                            <img src="images/drawing/market.png" alt="" />
-                        </a>
-                    </article>
                     <article>
                         <a href="images/drawing/open.png" class="image">
                             <img src="images/drawing/open.png" alt="" />
@@ -73,8 +75,18 @@
                         </a>
                     </article>
                     <article>
+                        <a href="images/drawing/absorb.png" class="image">
+                            <img src="images/drawing/absorb.png" alt="" />
+                        </a>
+                    </article>
+                    <article>
                         <a href="images/drawing/quantity.png" class="image">
                             <img src="images/drawing/quantity.png" alt="" />
+                        </a>
+                    </article>
+                    <article>
+                        <a href="images/drawing/market.png" class="image">
+                            <img src="images/drawing/market.png" alt="" />
                         </a>
                     </article>
                     <article>
@@ -169,6 +181,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>

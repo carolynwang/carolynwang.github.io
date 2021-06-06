@@ -25,25 +25,32 @@
 
         <!-- Header -->
         <header id="header">
-            <a href="/" class="logo"><strong>Works</strong> <span>by Carolyn</span></a>
-            <nav>
-                <a href="#menu">Menu</a>
+            <a href="/" class="logo"><img src="images/logo.png" alt="Carolyn Wang" /></a>
+            <nav id="nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="portfolio.html">Photography</a>
+                        <ul>
+                            <li><a href="grad.html">Graduates</a></li>
+                            <li><a href="portrait.html">Portraits</a></li>
+                            <li><a href="places-and-things.html">Places & Things</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="art.html">Artwork</a>
+                        <ul>
+                            <li><a href="art.html">Digital</a></li>
+                            <li><a href="art.html">Traditional</a></li>
+                        </ul>
+                    </li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
+                </ul>
             </nav>
         </header>
 
-        <!-- Menu -->
-        <nav id="menu">
-            <ul class="links">
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Photography</a></li>
-                <li><a href="art.html">Artwork</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
         <!-- Main -->
-        <div id="main" class="alt">
+        <div id="main" style="margin-top: 1em;">
 
             <!-- One -->
             <div class="inner">
@@ -86,6 +93,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/browser.min.js"></script>

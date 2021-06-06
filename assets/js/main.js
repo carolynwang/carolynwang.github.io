@@ -208,105 +208,39 @@
 
     });
 
-    // Menu.
-    var $menu = $('#menu'),
-        $menuInner;
+    // Dropdowns.
+    $('#nav > ul').dropotron({
+        mode: 'fade',
+        noOpenerFade: true,
+        speed: 300
+    });
 
-    $menu.wrapInner('<div class="inner"></div>');
-    $menuInner = $menu.children('.inner');
-    $menu._locked = false;
+    // Toggle.
+    $(
+            '<div id="navToggle">' +
+            '<a href="#navPanel" class="toggle"></a>' +
+            '</div>'
+        )
+        .appendTo($body);
 
-    $menu._lock = function() {
-
-        if ($menu._locked)
-            return false;
-
-        $menu._locked = true;
-
-        window.setTimeout(function() {
-            $menu._locked = false;
-        }, 350);
-
-        return true;
-
-    };
-
-    $menu._show = function() {
-
-        if ($menu._lock())
-            $body.addClass('is-menu-visible');
-
-    };
-
-    $menu._hide = function() {
-
-        if ($menu._lock())
-            $body.removeClass('is-menu-visible');
-
-    };
-
-    $menu._toggle = function() {
-
-        if ($menu._lock())
-            $body.toggleClass('is-menu-visible');
-
-    };
-
-    $menuInner
-        .on('click', function(event) {
-            event.stopPropagation();
-        })
-        .on('click', 'a', function(event) {
-
-            var href = $(this).attr('href');
-
-            event.preventDefault();
-            event.stopPropagation();
-
-            // Hide.
-            $menu._hide();
-
-            // Redirect.
-            window.setTimeout(function() {
-                window.location.href = href;
-            }, 250);
-
-        });
-
-    $menu
+    // Panel.
+    $(
+            '<div id="navPanel">' +
+            '<nav>' +
+            $('#nav').navList() +
+            '</nav>' +
+            '</div>'
+        )
         .appendTo($body)
-        .on('click', function(event) {
-
-            event.stopPropagation();
-            event.preventDefault();
-
-            $body.removeClass('is-menu-visible');
-
-        })
-        .append('<a class="close" href="#menu">Close</a>');
-
-    $body
-        .on('click', 'a[href="#menu"]', function(event) {
-
-            event.stopPropagation();
-            event.preventDefault();
-
-            // Toggle.
-            $menu._toggle();
-
-        })
-        .on('click', function(event) {
-
-            // Hide.
-            $menu._hide();
-
-        })
-        .on('keydown', function(event) {
-
-            // Hide on escape.
-            if (event.keyCode == 27)
-                $menu._hide();
-
+        .panel({
+            delay: 500,
+            hideOnClick: true,
+            hideOnSwipe: true,
+            resetScroll: true,
+            resetForms: true,
+            side: 'left',
+            target: $body,
+            visibleClass: 'navPanel-visible'
         });
 
     // Gallery.
