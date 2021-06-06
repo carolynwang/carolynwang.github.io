@@ -2465,6 +2465,9 @@ button:disabled,
         height: 2.75em;
         line-height: 2.75em;
     }
+    #header .logo img {
+        max-width: 65%
+    }
     /* #header .logo {
         padding: 0 0em;
     }
@@ -2603,7 +2606,7 @@ button:disabled,
 
 @media screen and (max-width: 480px) {
     #header .logo img {
-        max-width: 85%
+        max-width: 40%
     }
 }
 
