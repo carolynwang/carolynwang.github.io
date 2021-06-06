@@ -2550,7 +2550,7 @@ button:disabled,
         top: 0;
         width: 275px;
         z-index: 10002;
-        background: rgb(255, 255, 255, 0.8);
+        background: rgb(255, 255, 255, 0.95);
         /* box-shadow: inset 3px 0px 0px 0px #dfdfdf; */
         padding: 2em 23px 0 20px;
     }
