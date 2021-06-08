@@ -1697,7 +1697,7 @@ body.is-ie header.major>h1:after {
 }
 
 .icon.alt:before {
-    background-color: #8d8d8d;
+    background-color: #4d4d4d;
     border-radius: 100%;
     color: #ffffff;
     display: inline-block;
@@ -2345,7 +2345,7 @@ button:disabled,
     flex-grow: 1;
     /* height: inherit; */
     line-height: inherit;
-    font-size: 0.9em;
+    font-size: inherit;
 }
 
 #header nav ul {
@@ -2460,7 +2460,7 @@ button:disabled,
     display: none;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 895px) {
     #header {
         height: 2.75em;
         line-height: 2.75em;
@@ -2468,13 +2468,6 @@ button:disabled,
     #header .logo img {
         max-width: 65%
     }
-    /* #header .logo {
-        padding: 0 0em;
-    }
-    #header .logo img {
-        max-height: 80px;
-        margin: 1em 1.5em;
-    } */
     #header nav {
         display: none;
     }
@@ -2518,7 +2511,7 @@ button:disabled,
         text-decoration: none;
         position: absolute;
         right: 6px;
-        top: 6px;
+        top: 15px;
         background: transparent;
         width: 58px;
         height: 38px;
