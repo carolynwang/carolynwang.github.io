@@ -1988,17 +1988,17 @@ ul.pagination li>.page {
 }
 
 ul.pagination li>.page.active {
-    background-color: #ffffff;
-    color: #242943;
+    background-color: transparent;
+    color: #858585;
 }
 
-ul.pagination li>.page.active:hover {
-    background-color: #969696;
-    color: #242943 !important;
+ul.pagination li>.page.available:hover {
+    background-color: #eae5dedf;
+    color: #000000 !important;
 }
 
-ul.pagination li>.page.active:active {
-    background-color: #cbcbcb;
+ul.pagination li>.page.available:active {
+    background-color: #efebe4df;
 }
 
 ul.pagination li:first-child {
