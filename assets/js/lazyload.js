@@ -7,12 +7,12 @@ const handleCleanup = (event) => {
 
 const handleLoadImage = (event) => {
   const image = event.currentTarget;
+  image.removeEventListener("load", handleLoadImage);
   loadImage(image);
 };
 
 const loadImage = (image) => {
   image.setAttribute("src", image.getAttribute("data-src"));
-  image.removeEventListener("load", handleLoadImage);
   image.addEventListener("load", handleCleanup);
 };
 
