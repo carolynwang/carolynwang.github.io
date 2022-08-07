@@ -1734,6 +1734,11 @@ a.icon.alt:active:before {
   content-visibility: auto;
 }
 
+.image .placeholder {
+  filter: blur(8px);
+  transition: 0.2s filter linear;
+}
+
 .image img {
   display: block;
 }

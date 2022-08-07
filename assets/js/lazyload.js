@@ -6,6 +6,7 @@ const loadImage = (event) => {
   image.onload = () => {
     image.removeAttribute("data-src");
     image.removeEventListener("load", loadImage);
+    image.classList.remove("placeholder");
   };
 };
 
