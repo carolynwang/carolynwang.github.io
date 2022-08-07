@@ -2,7 +2,9 @@
 const images = document.querySelectorAll("img[data-src]");
 
 const loadImage = (image) => {
-  image.setAttribute("src", image.getAttribute("data-src"));
+  let fullImage = new Image();
+  fullImage.setAttribute("src", image.getAttribute("data-src"));
+  image.setAttribute("src", fullImage.getAttribute("src"));
   image.addEventListener("load", handleCleanup);
 };
 const cleanup = (image) => {
@@ -29,7 +31,7 @@ const loadImages = () => {
 };
 
 document.addEventListener("readystatechange", (event) => {
-  if (event.target.readyState === "interactive") {
+  if (event.target.readyState === "complete") {
     loadImages();
   }
 });
