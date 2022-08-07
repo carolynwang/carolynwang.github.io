@@ -23,5 +23,5 @@ const cleanup = (image) => {
 
 images.forEach((image) => {
   if (image.complete) loadImage(image);
-  image.addEventListener("load", handleLoadImage);
+  else image.addEventListener("load", handleLoadImage);
 });
