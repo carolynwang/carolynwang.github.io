@@ -1735,8 +1735,11 @@ a.icon.alt:active:before {
 }
 
 .image .placeholder {
-  filter: blur(8px);
-  transition: 0.2s filter linear;
+  opacity: 0;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .image img {
