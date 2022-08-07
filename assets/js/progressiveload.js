@@ -8,6 +8,7 @@ const loadImage = (image) => {
   image.addEventListener("load", handleCleanup);
 };
 const cleanup = (image) => {
+  
   image.removeAttribute("data-src");
   image.classList.remove("placeholder");
 };
