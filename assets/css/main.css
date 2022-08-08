@@ -3923,13 +3923,13 @@ body.is-preload .gallery.onload-fade-in article .image img {
   width: 22.5rem;
   max-width: 75vw;
   padding: 0.2em 0.2em 0.2em 0.2em;
-  background-color: transparent;
 }
 
 .gallery.style2 article .image {
   display: block;
   width: 100%;
   border-radius: 0;
+  background-color: transparent;
 }
 
 .gallery.style2 article .image img {
