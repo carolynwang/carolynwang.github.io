@@ -31,7 +31,7 @@ const loadImages = () => {
 };
 
 document.addEventListener("readystatechange", (event) => {
-  if (event.target.readyState === "complete") {
+  if (event.target.readyState === "interactive") {
     loadImages();
   }
 });

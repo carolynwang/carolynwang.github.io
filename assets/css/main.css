@@ -1732,6 +1732,7 @@ a.icon.alt:active:before {
   max-width: 100%;
   height: auto;
   content-visibility: auto;
+  background-color: transparent;
 }
 
 .image .placeholder {
@@ -3929,7 +3930,6 @@ body.is-preload .gallery.onload-fade-in article .image img {
   display: block;
   width: 100%;
   border-radius: 0;
-  background-color: transparent;
 }
 
 .gallery.style2 article .image img {
