@@ -1,4 +1,6 @@
 // only progressive load images with a data-src
+
+// select all images with data src tag -> an array of html image elements
 const images = document.querySelectorAll("img[data-src]");
 
 const loadImage = (image) => {
@@ -30,6 +32,7 @@ const loadImages = () => {
   });
 };
 
+// when document finishes loading, we want to start loading images
 document.addEventListener("readystatechange", (event) => {
   if (event.target.readyState === "complete") {
     loadImages();
