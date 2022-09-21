@@ -47,5 +47,5 @@ const validateImagesLoaded = () => {
   }
 };
 
-const validatationInterval = setInterval(validateImagesLoaded, 100);
+const validationInterval = setInterval(validateImagesLoaded, 100);
 preloadImages();
