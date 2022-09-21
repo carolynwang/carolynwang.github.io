@@ -8,6 +8,7 @@
 
     var $window = $(window),
         $body = $('body'),
+        $main = $('main'),
         $wrapper = $('#wrapper'),
         $header = $('#header'),
         $banner = $('#banner');
@@ -94,7 +95,7 @@
     // Play initial animations on page load.
     $window.on('load', function() {
         window.setTimeout(function() {
-            $body.removeClass('is-preload');
+            $main.removeClass('is-preload');
         }, 100);
     });
 
@@ -107,7 +108,7 @@
 
     // Fix: Enable IE-only tweaks.
     if (browser.name == 'ie' || browser.name == 'edge')
-        $body.addClass('is-ie');
+        $main.addClass('is-ie');
 
     // Scrolly.
     $('.scrolly').scrolly({
