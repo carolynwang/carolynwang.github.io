@@ -42,7 +42,7 @@ const validateImagesLoaded = () => {
 
   if (progress === 100) {
     isLoading = false;
-    clearInterval(validatationInterval);
+    clearInterval(validationInterval);
     loader.remove();
   }
 };
