@@ -3919,6 +3919,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
     overflow: hidden;
     width: 22.5rem;
     max-width: 75vw;
+    /* padding: 0; */
     padding: 0.2em 0.2em 0.2em 0.2em;
 }
 
@@ -3948,25 +3949,28 @@ body.is-preload .gallery.onload-fade-in article .image img {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
+    -moz-justify-content: start;
+    -webkit-justify-content: start;
+    -ms-justify-content: start;
+    justify-content: start;
     pointer-events: none;
     -moz-transition: opacity 0.2s ease-in-out;
     -webkit-transition: opacity 0.2s ease-in-out;
     -ms-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    right: 0;
+    top: 0;
+    /* width: 100%; */
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.25);
     opacity: 0;
-    padding: 3rem;
     z-index: 1;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    margin: 0.2em 0.2em 0.2em 0.2em;
 }
 
 .gallery.style2 article .caption a {
