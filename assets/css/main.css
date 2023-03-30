@@ -3917,22 +3917,23 @@ body.is-preload .gallery.onload-fade-in article .image img {
     display: block;
     position: relative;
     overflow: hidden;
-    width: 22.5rem;
-    max-width: 75vw;
+    /* width: 30rem; */
+    /* max-width: 75vw; */
     /* padding: 0; */
+    max-height: 75vh;
     padding: 0.2em 0.2em 0.2em 0.2em;
 }
 
 .gallery.style2 article .image {
     display: block;
-    width: 100%;
+    height: 100%;
     border-radius: 0;
     background-color: #f7f5f2cc;
 }
 
 .gallery.style2 article .image img {
     display: block;
-    width: 100%;
+    height: 100%;
     border-radius: 0;
 }
 
@@ -4012,7 +4013,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 }
 
 .gallery.style2.small article {
-    width: 17.5rem;
+    height: 26.25rem;
 }
 
 .gallery.style2.small article .caption {
@@ -4032,7 +4033,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 }
 
 .gallery.style2.big article {
-    width: 30rem;
+    height: 45rem;
 }
 
 .gallery.style2.big article .caption {
